@@ -4,6 +4,7 @@
 同文件夹下建立两个excel表(漏洞信息报表.xlsx、cve_res.xlsx）
 
 具体过滤的可以根据这里改，可以改成武器化等，根据ali漏洞库字段来自行修改
+
 tag_with_title_exp = soup.find('button', {'title': '暂无可利用代码'})
         if tag_with_title_exp:
             continue
