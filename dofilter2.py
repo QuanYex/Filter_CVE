@@ -47,7 +47,7 @@ def getPocInformation(CVE_List):
             continue
         else:
             CVE_Num = f"CVE-{CVE_Num}"
-            CVE_name_value = soup.find_all("span", class_="header__title__text")
+            CVE_name_value = soup.find("span", class_="header__title__text")
             cve_name = CVE_name_value.text.strip()
             CVE_res[CVE_Num] = cve_name
             print(CVE_res)
